@@ -1,0 +1,48 @@
+{
+
+  "scripts": {
+    
+    "start": "DEBUG=app,app:* nodemon app.js",
+
+    "debug": "DEBUG=* nodemon app.js",
+
+    "test": "echo \" Error: No Test specified \" && exit 1"
+
+  },
+
+  "dependencies": {
+
+    "axios": "^1.6.2",
+
+    "chalk": "^4.1.2",
+
+    "debug": "^4.3.4",
+
+    "ejs": "^3.1.9",
+
+    "express": "^4.18.2",
+
+    "mongodb": "^6.3.0",
+
+    "morgan": "^1.10.0",
+
+    "nodemon": "^3.0.1"
+
+  },
+
+  "nodemonConfig": {
+
+    "restartable": "rs",
+
+    "delay": 2500,
+
+    "env": {
+
+      "PORT": 4000
+
+    }
+
+  }
+
+}
+

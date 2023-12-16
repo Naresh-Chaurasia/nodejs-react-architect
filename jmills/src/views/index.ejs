@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+  <p><a href="sessions">Sessions</a></p>
+  <p><a href="books">Books</a></p>
+ 
+  <p><%=title%></p>
+  <p>
+
+    <ul>
+      <% data.forEach(function(item) { %>
+        <li><%= item %></li>
+      <% }); %>
+    </ul>
+  </p>
+</body>
+
+</html>

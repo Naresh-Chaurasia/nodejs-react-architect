@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON to HTML</title>
+  <style>
+    /* Some basic styling */
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th{
+      background-color: #dddddd;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h3>JSON Data Display</h3>
+  <pre id="jsonDisplay"></pre>
+
+  <script>
+    // Example JSON data
+    const summaryData = {
+      "name": "Name of the book, course, source of the comment etc.",
+      "isbn": "",
+      "origin_reference": "What is the origin or reference of this comment",
+      "origin_link": "Origin, Reference Link",
+      "book_category": [],
+      "book_category_comments": "Book Category is List. A Book can belong to multiple category",
+      "highlight": "",
+      "highlight_comment": "Highlight from Book",
+      "priority": "",
+      "priority_comment": "P1-High,P2-Medium,P3-Low",
+      "highlight_of_comment": "Example - Parkinson's Law",
+
+
+      "authors": [
+          "author1","author2","author3"
+      ],
+      "authors_comment": "Authors is a List. There can be multiple Authors of a book",
+
+      "comments": {
+        "comment1": {
+          "comment":"The Comment",
+          "comment_category": "Comment Category",
+          "time_stamp": "time_stamp",
+          "image": "image"
+        },
+        "comment2": {
+          "comment":"The Comment",
+          "comment_category": "Comment Category",
+          "time_stamp": "time_stamp",
+          "image": "image"
+        },
+        "comment3": {
+          "comment":"The Comment",
+          "comment_category": "Comment Category",
+          "time_stamp": "time_stamp",
+          "image": "image"
+        },
+        "comment4": {
+          "comment":"The Comment",
+          "comment_category": "Comment Category",
+          "time_stamp": "time_stamp",
+          "image": "image"
+        },
+        "comment5": {
+          "comment":"The Comment",
+          "comment_category": "Comment Category",
+          "time_stamp": "time_stamp",
+          "image": "image"
+        }
+      },
+      "comments_comment":"5 Comments, Each Editable. The comment will be free flowing text.",
+      "comment_category_comment": "Dance, Personal Relationship, Job, Career etc."
+    };
+
+
+    // Convert JSON to string with proper indentation
+    const formattedJson = JSON.stringify(summaryData, null, 2);
+
+    // Display formatted JSON in HTML
+    document.getElementById("jsonDisplay").textContent = formattedJson;
+  </script>
+
+  <hr/>
+
+  <h2>Book Static Details</h2>
+
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>ISBN</th>
+      <th>ORIGIN REFERENCE</th>
+      <th>ORIGIN LINK</th>
+      <th>AUTHOR(S)</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>ISBN</td>
+      <td>ORIGIN REFERENCE</td>
+      <td>ORIGIN LINK</td>
+      <td>AUTHOR(S)</td>
+    </tr>
+  </table>
+
+  <h2>Comment Details</h2>
+
+  <table>
+    <tr>
+      <th>BOOK CATEGORY</th>
+      <th>PRIORITY</th>
+      <th>HIGHLIGHT OF COMMENT</th>
+    </tr>
+    <tr>
+      <td>BOOK CATEGORY</td>
+      <td>PRIORITY</td>
+      <td>HIGHLIGHT OF COMMENT</td>
+    </tr>
+  </table>
+
+  <h2>Comment1</h2>
+
+  <table>
+    <tr>
+      <th>THE NAME</th>
+      <th>COMMENT CATEGORY</th>
+      <th>DATE & TIME</th>
+      <th>IMAGE</th>
+    </tr>
+    <tr>
+      <td>THE NAME</td>
+      <td>COMMENT CATEGORY</td>
+      <td>DATE & TIME</td>
+      <td>IMAGE</td>
+    </tr>
+  </table>
+
+  <h2>Comment2</h2>
+  <table>
+    <tr>
+      <th>THE NAME</th>
+      <th>COMMENT CATEGORY</th>
+      <th>DATE & TIME</th>
+      <th>IMAGE</th>
+    </tr>
+    <tr>
+      <td>THE NAME</td>
+      <td>COMMENT CATEGORY</td>
+      <td>DATE & TIME</td>
+      <td>IMAGE</td>
+    </tr>
+  </table>
+
+  <h2>Comment3</h2>
+  <table>
+    <tr>
+      <th>THE NAME</th>
+      <th>COMMENT CATEGORY</th>
+      <th>DATE & TIME</th>
+      <th>IMAGE</th>
+    </tr>
+    <tr>
+      <td>THE NAME</td>
+      <td>COMMENT CATEGORY</td>
+      <td>DATE & TIME</td>
+      <td>IMAGE</td>
+    </tr>
+  </table>
+
+  <h2>Comment4</h2>
+  <table>
+    <tr>
+      <th>THE NAME</th>
+      <th>COMMENT CATEGORY</th>
+      <th>DATE & TIME</th>
+      <th>IMAGE</th>
+    </tr>
+    <tr>
+      <td>THE NAME</td>
+      <td>COMMENT CATEGORY</td>
+      <td>DATE & TIME</td>
+      <td>IMAGE</td>
+    </tr>
+  </table>
+
+  <h2>Comment5</h2>
+  <table>
+    <tr>
+      <th>THE NAME</th>
+      <th>COMMENT CATEGORY</th>
+      <th>DATE & TIME</th>
+      <th>IMAGE</th>
+    </tr>
+    <tr>
+      <td>THE NAME</td>
+      <td>COMMENT CATEGORY</td>
+      <td>DATE & TIME</td>
+      <td>IMAGE</td>
+    </tr>
+  </table>
+
+
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+
+  <b>title</b>:<%=session.title%> <br>
+  <b>description</b>:<%=session.description%><br>
+  <b>name</b>:<%=session.speakers[0].name%> <br>
+  <b>room</b>:<%=session.room%><br>
+  <b>day</b>:<%=session.day%><br>
+  <b>format</b>:<%=session.format%><br>
+  <b>track</b>:<%=session.track%><br>
+  <b>level</b>:<%=session.level%><br>
+
+  <hr/>
+
+</body>
+</html>
+

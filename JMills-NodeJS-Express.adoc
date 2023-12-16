@@ -1,0 +1,96 @@
+= Building Web Applications with Node.js and Express by Jonathan Mills
+:toc: left
+:toclevels: 5
+:sectnums:
+
+NOTE: NOTE
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+---
+
+NOTE: Commands
+
+----
+
+nvm install node
+
+mpm install express
+
+npm start
+
+DEBUG=* node app.js
+
+DEBUG=app node app.js
+----
+
+
+---
+
+NOTE: Coding Help
+
+----
+app.get('/',
+
+(req,res)=>{}
+
+)
+----
+
+
+* file:///Users/nareshchaurasia/nc/Pluralsight-Downloads/Jonathan-Mills-Node/[Jonathan-Mills-Node]
+
+== Building Web Applications with Node.js and Express by Jonathan Mills
+
+==== What is Node ?
+
+Now, just to make sure we're all on the same page, let's take just a minute and talk about what Node is and why we would use it in this situation. *All right, so first and foremost, Node at its core is just server‑side JavaScript*. So when you think of JavaScript, you normally think of the browser. You got Chrome, Edge, V8, SpiderMonkey, all of those things, and *what Node does is, it brings the JavaScript abilities to the server side*.
+
+So now you can write back‑end services in JavaScript, as well as your front end. In addition to being server side, *it's also cross‑platform natively. That means I can run the same code on a Mac or on a Windows machine or Linux or wherever I want to run this*. That also includes, think about it, devices and things like that, so it kind of grows your JavaScript ecosystem into just about anywhere you can think of to run code. And honestly, JavaScript is awesome. Why wouldn't you want to run it everywhere? You've got all of the benefits of JavaScript, if you like JavaScript, or the horrors of JavaScript, if you don't like JavaScript, that now I can run on the server side for my APIs or on devices or wherever I want to do it. And last but not least, *Node.js is open source*, so this is a purely open‑source community‑driven thing that you can use. And you can get into the Git repository and you can go and you can add to it and you can contribute back to it, all of those things for Node.js.
+
+Now that's awesome. That's that's a great start. Basically, we're just saying, you're going to take your JavaScript, we're going to run it on the server side. *So in that case, what's Express*? We've got Node.js and npm, we'll talk about what that is here in a minute, and then you have Express. So let's talk a little bit about what Express brings to the table sitting on top of Node.js. *Express at its core is just a web dev framework. It's what we're going to use to serve web pages or serve APIs or to receive requests, those types of things, are all baked into Express*. And honestly, it's a very un opinionated but also minimalistic. There's not a lot of heft to Express. It's going to allow us to take requests and send back responses, and, really, that's all it does, which makes it ideal for super lightweight, little back‑end APIs that we want to spin up to serve our front‑end servers. Now that we understand what we're looking at here, let's take a minute and go install Node so that we can get started with building our web application.
+
+==== Dealing with Node Versions
+
+NVM
+
+=== Setting up Tooling
+
+* NPM Script - start/run our application
+
+----
+"scripts": {
+    "start": "DEBUG=app nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js"
+  }
+
+npm start
+npm run debug
+
+----
+
+* Nodemon - automatic restarts & environment variables
+
+----
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 4000
+    }
+----
+
+=== Templating Engine
+
+EJS or HTML.
+
+=== Using Routing to Build Multiple Pages
+
+* Implementing Navigation - Creating Hyperlink
+

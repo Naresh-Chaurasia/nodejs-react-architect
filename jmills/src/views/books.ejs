@@ -1,0 +1,17 @@
+<% books_json.map((book, index)=>{%>
+  <div>
+    <p><%=book.name%></p>
+    <p><%=book.highlight%></p>
+    <p><%=book.isbn%></p>
+    
+    <p><%=book.comments.comment1.comment %></p>
+    <p><%=book.comments.comment2.comment %></p>
+    <p><%=book.comments.comment3.comment %></p>
+    <p><%=book.comments.comment4.comment %></p>
+    <p><%=book.comments.comment5.comment %></p>
+    <p>book<%=index%></p>
+    <a href="books/<%=index%>"/>book<a>
+    
+  </div>
+  <hr/>
+<% }) %>

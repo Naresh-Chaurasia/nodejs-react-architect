@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Steal Like an Artist",
+        "isbn": "isbn1",
+        "origin_reference": "What is the origin or reference of this comment",
+        "origin_link": "Origin, Reference Link",
+        "book_category": [],
+        "book_category_comments": "Book Category is List. A Book can belong to multiple category",
+        "highlight": "There's an economic theory out there that if you take the incomes of your five closest friends and average them, the resulting number will be pretty close to your own income.",
+        "highlight_comment": "Highlight from Book",
+        "priority": "",
+        "priority_comment": "P1-High,P2-Medium,P3-Low",
+        "highlight_of_comment": "Example - Parkinson's Law",
+        "authors": [
+          "Austin Kleon"
+        ],
+        "authors_comment": "Authors is a List. There can be multiple Authors of a book",
+        "comments": {
+          "comment1": {
+            "comment": "The Comment1",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment2": {
+            "comment": "",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment3": {
+            "comment": "The Comment3",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment4": {
+            "comment": "The Comment4",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment5": {
+            "comment": "The Comment5",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          }
+        },
+        "comments_comment": "5 Comments, Each Editable. The comment will be free flowing text.",
+        "comment_category_comment": "Dance, Personal Relationship, Job, Career etc."
+      },
+      {
+        "name": "Name of the book, course, source of the comment etc.",
+        "isbn": "isbn2",
+        "origin_reference": "What is the origin or reference of this comment",
+        "origin_link": "Origin, Reference Link",
+        "book_category": [],
+        "book_category_comments": "Book Category is List. A Book can belong to multiple category",
+        "highlight": "",
+        "highlight_comment": "Highlight from Book",
+        "priority": "",
+        "priority_comment": "P1-High,P2-Medium,P3-Low",
+        "highlight_of_comment": "Example - Parkinson's Law",
+        "authors": [
+          "author1",
+          "author2",
+          "author3"
+        ],
+        "authors_comment": "Authors is a List. There can be multiple Authors of a book",
+        "comments": {
+          "comment1": {
+            "comment": "The Comment",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment2": {
+            "comment": "",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment3": {
+            "comment": "The Comment3",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment4": {
+            "comment": "The Comment",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          },
+          "comment5": {
+            "comment": "The Comment",
+            "comment_category": "Comment Category",
+            "time_stamp": "time_stamp",
+            "image": "image"
+          }
+        },
+        "comments_comment": "5 Comments, Each Editable. The comment will be free flowing text.",
+        "comment_category_comment": "Dance, Personal Relationship, Job, Career etc."
+      }
+]

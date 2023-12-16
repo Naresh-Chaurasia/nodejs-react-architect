@@ -1,0 +1,117 @@
+<html>
+
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th{
+        background-color: #dddddd;
+      }
+
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      </style>
+  </head>
+
+  <body>
+    <b>title</b>:<%=session.title%> <br>
+    <b>description</b>:<%=session.description%><br>
+    <b>name</b>:<%=session.speakers[0].name%> <br>
+    <b>room</b>:<%=session.room%><br>
+    <b>day</b>:<%=session.day%><br>
+    <b>format</b>:<%=session.format%><br>
+    <b>track</b>:<%=session.track%><br>
+    <b>level</b>:<%=session.level%><br>
+
+    <hr/>
+
+
+    <h2>Static Details</h2>
+
+    <table>
+      <tr>
+        <th>NAME</th>
+        <th>ISBN</th>
+        <th>origin_reference</th>
+        <th>book_category</th>
+        <th>book_category</th>
+        <th>highlight</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+    </table>
+
+
+  <hr/>
+
+  {
+    "name": "Steal Like An Artist",
+    "isbn": "",
+    "origin_reference": "What is the orignation or reference of this comment",
+    "book_category": [],
+    "book_category_comments": "Book Category is List. A Book can belong to multiple category",
+    "highlight": "",
+    "highlight_comment": "Highlight from Book",
+    "priority": "",
+    "priority_comment": "P1-High,P2-Medium,P3-Low",
+    "highlight_of_comment": "Example - Parkinson's Law",
+  
+  
+    "authors": [
+        "author1","author2","author3"
+    ],
+    "authors_comment": "Authors is a List. There can be multiple Authors of a book",
+  
+    "comments": {
+      "comment1": {
+        "comment":"The Comment",
+        "comment_category": "Comment Category",
+        "time_stamp": "time_stamp",
+        "image": "image"
+      },
+      "comment2": {
+        "comment":"The Comment",
+        "comment_category": "Comment Category",
+        "time_stamp": "time_stamp",
+        "image": "image"
+      },
+      "comment3": {
+        "comment":"The Comment",
+        "comment_category": "Comment Category",
+        "time_stamp": "time_stamp",
+        "image": "image"
+      },
+      "comment4": {
+        "comment":"The Comment",
+        "comment_category": "Comment Category",
+        "time_stamp": "time_stamp",
+        "image": "image"
+      },
+      "comment5": {
+        "comment":"The Comment",
+        "comment_category": "Comment Category",
+        "time_stamp": "time_stamp",
+        "image": "image"
+      }
+    },
+    "comments_comment":"5 Comments, Each Editable. The comment will be free flowing text.",
+    "comment_category_comment": "Dance, Personal Relationship, Job, Career etc."
+  }
+  
+
+  </body>
+</html>
