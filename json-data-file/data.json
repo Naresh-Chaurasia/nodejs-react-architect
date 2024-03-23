@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Name of the book, course, source of the comment etc.",
+    "isbn": "",
+    "origin_reference": "What is the origin or reference of this comment",
+    "origin_link": "Origin, Reference Link",
+    "book_category": [],
+    "highlight": "The person is talking about their time studying psychology. They were naturally drawn to a specific area of psychology called behaviorism. Unlike some other branches of psychology that focus on emotions and talking about feelings, behaviorism is more practical. It's based on observing and understanding behaviors, trying to figure out what causes people to do things. Essentially, this person found behaviorism to be a more straightforward and concrete way to approach the study of psychology.",
+    "highlight_comment": "Highlight from Book",
+    "comments": {
+      "comment1": {
+        "comment": "The Comment"
+      },
+      "comment2": {
+        "comment": "The Comment"
+      },
+      "comment3": {
+        "comment": "The Comment"
+      },
+      "comment4": {
+        "comment": "The Comment"
+      },
+      "comment5": {
+        "comment": "The Comment"
+      }
+    }
+  },
+  {
+    "name": "Name of the book, course, source of the comment etc.",
+    "isbn": "",
+    "origin_reference": "What is the origin or reference of this comment",
+    "origin_link": "Origin, Reference Link",
+    "book_category": [],
+    "highlight": "Certainly! The passage is suggesting that women, on a subconscious level, use social and psychological strategies to benefit their own ability to have children. For example, the phrase prerogative to change her mind means that women might be seen as having the right to change their opinions or decisions more easily.  The text implies that women's behavior, even when it seems unpredictable or fickle, is socially accepted, while men are held to a higher standard of responsibility that aligns with what benefits women in terms of reproduction. In simpler terms, the passage suggests that women have developed certain social behaviors to support their reproductive goals, and society tends to excuse these behaviors, while men are expected to act in ways that benefit women's reproductive strategies.",
+    "highlight_comment": "Highlight from Book",
+    "comments": {
+      "comment1": {
+        "comment": "The Comment"
+      }
+    }
+  }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Display</title>
+    <style>
+        .json-item {
+            margin-bottom: 10px;
+        }
+
+        .json-item label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="json-item" id="name"></div>
+    <div class="json-item" id="age"></div>
+    <div class="json-item" id="city"></div>
+
+    <script>
+        // Fetch data from the JSON file
+        fetch('data.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                // Display each JSON value in separate div
+                displayJsonValue('name', jsonData.name);
+                displayJsonValue('age', jsonData.age);
+                displayJsonValue('city', jsonData.city);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        function displayJsonValue(id, value) {
+            var container = document.getElementById(id);
+            var label = document.createElement('label');
+            label.textContent = id.charAt(0).toUpperCase() + id.slice(1) + ': ';
+            var div = document.createElement('div');
+            div.textContent = value;
+
+            container.appendChild(label);
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>
